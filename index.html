@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f4ec" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>SayLedger · 说记</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-nav="home" aria-label="Home"><span class="brand-mark">S✈</span><span>SayLedger</span></button>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙︎</button>
+    </header>
+
+    <main id="app"></main>
+
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button data-nav="home" class="nav-item active"><span>⌂</span><small>Home</small></button>
+      <button data-nav="trips" class="nav-item"><span>▣</span><small>Trips</small></button>
+      <button id="voiceFab" class="voice-fab" aria-label="Voice expense">🎙</button>
+      <button data-nav="friends" class="nav-item"><span>♙</span><small>Friends</small></button>
+      <button data-nav="more" class="nav-item"><span>•••</span><small>More</small></button>
+    </nav>
+  </div>
+
+  <dialog id="expenseDialog" class="sheet"></dialog>
+  <dialog id="categoryDialog" class="sheet"></dialog>
+  <dialog id="inviteDialog" class="sheet"></dialog>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
