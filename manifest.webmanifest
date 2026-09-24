@@ -1,0 +1,10 @@
+{
+  "name":"SayLedger · 说记",
+  "short_name":"SayLedger",
+  "description":"Voice-first travel expense tracker and bill splitter",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f7f4ec",
+  "theme_color":"#f7f4ec",
+  "icons":[]
+}
